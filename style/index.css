@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 10px;
+}
+
+/* Estilos del header */
+
+.header_flex{
+    width: 100%;
+    height: 100px;
+    min-height: 100px;
+    display: flex;
+}
+
+.info_empresa{
+    width: 30%;
+    display: flex;
+}
+
+.logo{
+    width: 140px;
+    height: 100px;
+}
+
+.title{
+    margin: 30px 0 0 15px;
+    font-family: "Segoe UI";
+}
+
+.barra_nav{
+    width: 100%;
+}
+
+.barra_nav nav{
+    width: 100%;
+    margin: 40px 0;
+    text-align: center;
+}
+
+.barra_nav li{
+    width: 100%;
+    margin: 60px;
+    display: inline;
+    list-style: none;
+}
+
+.barra_nav a{
+    font-family: "Segoe UI";
+    text-decoration: none;
+    color: black;
+}
+
+/* estilos del main */
+
+.main__flex{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.section_productos{
+    width: 33%;
+    height: 450px;
+    margin: 15px 0 0 0;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Segoe UI";
+    background: #333;
+}
+
+.grid_products{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+}
+
+.card__products{
+    width: 50%;
+}
+
+.img__card{
+    width: 100px;
+    height: 100px;
+}
+
+.model_products{
+    width: 40%;
+    text-align: center;
+}
+
+.model_products img{
+    width: 60%;
+    margin: 15% 0;
+}
+
+.ofertas_products{
+    width: 30%;
+}
+
+.Oferta{
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    border-radius: 10px;
+    display: block;
+    font-family: "Segoe UI";
+    background: #333;
+}
