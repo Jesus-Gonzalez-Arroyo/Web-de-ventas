@@ -7,7 +7,7 @@ header{
     padding: 10px;
 }
 
-/* Estilos del header */
+/* ----------------------------Estilos del header------------------------------- */
 
 .header_flex{
     width: 100%;
@@ -32,7 +32,7 @@ header{
 }
 
 .barra_nav{
-    width: 100%;
+    width: 55%;
 }
 
 .barra_nav nav{
@@ -54,34 +54,89 @@ header{
     color: black;
 }
 
-/* estilos del main */
+.iconos_{
+    width: 15%;
+    text-align: center;
+}
+
+.iconos_ i{
+    margin: 38px 10px;
+    font-size: 23px;
+}
+
+.iconos_ i:hover{
+    cursor: pointer;
+}
+
+/*  ----------------------------estilos del main------------------------------- */
 
 .main__flex{
-    width: 90%;
+    width: 95%;
     margin: auto;
     display: flex;
 }
 
 .section_productos{
-    width: 33%;
-    height: 450px;
-    margin: 15px 0 0 0;
+    width: 70%;
+    height: 490px;
+    margin: 15px 0 40px 0;
     padding: 4px;
     border-radius: 10px;
     text-align: center;
     font-family: "Segoe UI";
-    background: #333;
 }
 
 .grid_products{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 200px);
 }
 
-.card__products{
-    width: 50%;
+
+/* ------------------------------estilos del anuncio----------------------------- */
+
+.anuncio_empresa{
+    width: 95%;
+    height: 40%;
+    margin: 10px auto;
+}
+
+.flex__anuncio{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    border-radius: 20px;
+    background: #333;
+}
+
+.img_anuncio{
+    width: 40%;
+}
+
+.img_anuncio img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.texto_anuncio{
+    width: 60%;
+    margin: 0 0 0 40px;
+    font: oblique bold 390% cursive;
+}
+
+.texto_anuncio p{
+    margin:10% auto;
+}
+
+
+/* -------------------------------estilos de los productos--------------------- */ 
+
+.card__product{
+    margin: 5px;
+    border-radius: 10px;
+    background: #888;
 }
 
 .img__card{
@@ -89,26 +144,45 @@ header{
     height: 100px;
 }
 
-.model_products{
-    width: 40%;
-    text-align: center;
+.content_card{
+    margin: 15px auto;
 }
 
-.model_products img{
-    width: 60%;
-    margin: 15% 0;
-}
+/* ---------------------------------estilos de las ofertas----------------------- */
 
 .ofertas_products{
     width: 30%;
 }
 
 .Oferta{
-    width: 100%;
-    height: 220px;
+    width: 75%;
+    height: 370px;
+    margin: 27% auto;
+    padding: 5px 20px;
     text-align: center;
     border-radius: 10px;
     display: block;
     font-family: "Segoe UI";
     background: #333;
 }
+
+.Oferta p{
+    font-size: 20px;
+}
+
+.Oferta i{
+    font-size: 50px;
+}
+
+.Oferta i:hover{
+    cursor: pointer;
+}
+
+.descuento{
+    width: 100%;
+}
+
+.num__descuento{
+    font-size: 80px;
+}
+
