@@ -5,6 +5,7 @@ body{
 
 header{
     padding: 10px;
+    margin: 0 0 30px 0;
 }
 
 /* ----------------------------Estilos del header------------------------------- */
@@ -90,7 +91,7 @@ header{
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(2, 250px);
 }
 
 
@@ -134,9 +135,14 @@ header{
 /* -------------------------------estilos de los productos--------------------- */ 
 
 .card__product{
-    margin: 5px;
+    margin: 10px;
     border-radius: 10px;
     background: #888;
+}
+
+.description__card{
+    font-family: "Segoe UI";
+    font-size: 15px;
 }
 
 .img__card{
@@ -157,7 +163,7 @@ header{
 .Oferta{
     width: 75%;
     height: 370px;
-    margin: 27% auto;
+    margin: 43% auto;
     padding: 5px 20px;
     text-align: center;
     border-radius: 10px;
@@ -186,3 +192,55 @@ header{
     font-size: 80px;
 }
 
+/* ---------------------------estilos de botones cantidad de productos--------------------- */
+
+.btn_cantidad{
+    display: inline;
+}
+
+.cantidad{
+    width: 30px;
+    margin: 0 3px;
+    border: 0;
+    border-radius: 4px;
+}
+
+.btn__carrito{
+    width: 140px;
+    margin: 10px 10px;
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn_cantidad{
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 50%;
+}
+
+.dicho{
+    margin: 0;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size: 50px;
+}
+
+/* ----------------------estilos section de chaquetas-------------------------- */
+
+.section_chaquetas{
+    width: 87%;
+    margin: 70px auto;
+}
+
+.section_productos_chaquetas{
+    width: 100%;
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+.section_productos_chaquetas h2{
+    font-family: "Segoe UI";
+}
