@@ -145,6 +145,10 @@ header{
     font-size: 15px;
 }
 
+.description__card p{
+    margin:7px 0;
+}
+
 .img__card{
     width: 100px;
     height: 100px;
@@ -163,7 +167,7 @@ header{
 .Oferta{
     width: 75%;
     height: 370px;
-    margin: 43% auto;
+    margin: 39% auto;
     padding: 5px 20px;
     text-align: center;
     border-radius: 10px;
@@ -213,6 +217,10 @@ header{
     border-radius: 5px;
 }
 
+.btn__carrito:active{
+    background: red;
+}
+
 .btn_cantidad{
     width: 25px;
     height: 25px;
@@ -243,4 +251,40 @@ header{
 
 .section_productos_chaquetas h2{
     font-family: "Segoe UI";
+}
+
+
+/* --------------------estilos del carrito-------------------------- */
+
+.carrito{
+    display: none;
+    position: absolute;
+    width: 400px;
+    max-width: 400px;
+    height: 350px;
+    max-height: 350px;
+    margin: -136% 0 0 65%;
+    padding: 10px 0;
+    border-radius: 10px;
+    overflow-y: scroll;
+    background: #777;
+}
+
+.carrito table{
+    width: 100%;
+    text-align: center;
+}
+
+.cerrar__carrito{
+    width: 10px;
+    height: 30px;
+    margin: 0 0 5px 12px;
+    border: 0;
+    border-radius: 50%;
+    font-size: 23px;
+    background: #777;
+}
+
+.cerrar__carrito:hover{
+    cursor: pointer;
 }
