@@ -226,7 +226,7 @@
                                 <img id="casco_6" class="img__card" src="./assets/chaqueta 8.jpg" alt="producto casco 1">
                                 <div class="description__card">
                                     <p class="title">Chaqueta</p>
-                                    <p class="precio">$80,000 COL</p>
+                                    <p class="precio">80000</p>
                                 </div>
                                 <button class="btn__carrito">Añadir al carrito</button>
                             </div>
@@ -236,19 +236,21 @@
         </div>
 
         <div class="carrito">
-            <div>
-                <table>
-                    <td>Nombre</td>
-                    <td>Precio</td>
-                    <td>Imagen</td>
-                </table>           
+            <div class="flex_carrito">
+                <div class="table">
+                    <table>
+                        <td>Nombre</td>
+                        <td>Precio</td>
+                        <td>Imagen</td>
+                    </table>           
+                </div>
                 <div class="opciones">
-                    <div>
-                        <button>Realizar Compra</button>
-                    </div>
-                    <div>
+                    <div class="total_compra">
                         <p>Total: </p>
-                        <input type="text">
+                        <input type="text" id="valor_total">
+                    </div>
+                    <div class="boton_compra">
+                        <button>Realizar Compra</button>
                     </div>
                 </div>
             </div>
