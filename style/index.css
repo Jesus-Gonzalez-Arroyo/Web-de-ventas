@@ -259,20 +259,28 @@ header{
 .carrito{
     display: none;
     position: absolute;
-    width: 400px;
-    max-width: 400px;
+    width: 580px;
+    max-width: 580px;
     height: 350px;
     max-height: 350px;
-    margin: -136% 0 0 65%;
+    margin: -136% 0 0 52%;
     padding: 10px 0;
     border-radius: 10px;
-    overflow-y: scroll;
+    font-family: "Segoe UI";
     background: #777;
 }
 
 .carrito table{
     width: 100%;
     text-align: center;
+}
+
+.carrito i{
+    margin: 0 15px 0 0;
+} 
+
+.carrito i:hover{
+    cursor: pointer;
 }
 
 .cerrar__carrito{
@@ -287,4 +295,58 @@ header{
 
 .cerrar__carrito:hover{
     cursor: pointer;
+}
+
+
+/* ----------------estilos adicionales del carrito--------------- */
+
+.opciones{
+    width: 45%;
+    margin: auto;
+}
+
+.flex_carrito{
+    width: 100%;
+    display: flex;
+}
+
+.table{
+    width: 100%;
+    height: 350px;
+    max-height: 350px;
+    margin: 0 10px 0 0;
+    overflow-y: scroll;
+}
+
+.total_compra{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.total_compra p{
+    display: inline;
+    font-family: "Segoe UI";
+}
+
+.total_compra input{
+    width: 100px;
+    margin: 10px 0 20px 0;
+    padding: 5px;
+    border: 0;
+    border-radius: 10px;
+}
+
+.boton_compra{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.boton_compra button{
+    width: 80%;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
 }
