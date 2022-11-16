@@ -11,17 +11,17 @@ class Carrito {
         const InfoProducto = {
             name: producto.querySelector('.description__card .title').textContent,
             image: producto.querySelector('img').src,
-            precio: producto.querySelector('.description__card .precio').textContent
+            precio: producto.querySelector('.description__card .precio_producto .precio').textContent
         }
-        this.TotalCompra(InfoProducto.precio)
+        this.TotalCompra(parseFloat(InfoProducto.precio))
         this.InsertarDatosProducto(InfoProducto)
     }
 
 
     TotalCompra(precioProducto){
         const valor = document.querySelector('#valor_total')
-        const valorproducto = parseFloat(precioProducto)
-        const total = valor.value + valorproducto
+        const valorproducto = precioProducto
+        const total = parseFloat(valor.value) + valorproducto
         valor.value = total
     }
 
@@ -31,7 +31,7 @@ class Carrito {
             <td>${datos.name}</td>
             <td class='price'>${datos.precio}</td>
             <td>
-                <img src='${datos.image}' style='width:100px'>
+                <img src='${datos.image}'>
             </td>
             <td>
                 <i class="fa-solid fa-trash"></i>
