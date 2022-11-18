@@ -259,11 +259,11 @@ header{
 .carrito{
     display: none;
     position: absolute;
-    width: 580px;
-    max-width: 580px;
+    width: 620px;
+    max-width: 620px;
     height: 350px;
     max-height: 350px;
-    margin: -136% 0 0 52%;
+    margin: -139% 0 0 48%;
     padding: 10px 0;
     border-radius: 10px;
     font-family: "Segoe UI";
@@ -361,4 +361,15 @@ header{
     padding: 10px;
     border: 0;
     border-radius: 20px;
+}
+
+
+.btn_cant_product{
+    display: inline;
+}
+
+.cant_produc{
+    width: 20px;
+    text-align: center;
+    display: inline;
 }
