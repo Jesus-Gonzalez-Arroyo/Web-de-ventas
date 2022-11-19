@@ -5,4 +5,3 @@ const listaProducto = document.querySelector('.carrito table')
 btn__carrito.forEach((boton)=>{
     boton.addEventListener('click', (e)=>{carrito.AñadirProducto(e)})
 })
-
