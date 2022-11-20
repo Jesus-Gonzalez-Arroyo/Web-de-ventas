@@ -59,17 +59,22 @@ class Carrito {
                 cantidad.value = cant_produc
                 //sumar el valor total segun el numero de unidades sumadas
                 const valor = document.querySelector('#valor_total') 
-                const valor_total_unidades = valor.value * 1
-                valor.value = parseFloat(valor.value) + valor_total_unidades
+                const valor_total_unidades = e.target.parentElement.parentElement.querySelector('.price').textContent
+                valor.value = parseFloat(valor.value) + parseFloat(valor_total_unidades)
             })
         })
         
         //restar cantidad del producto
         btn_restar.forEach((btn) => {
             btn.addEventListener('click', (e)=>{
+                //restar cantidad de unidades del producto
                 const cantidad = e.target.parentElement.querySelector('.cant_produc')
                 const cant_produc = parseInt(cantidad.value) - 1
                 cantidad.value = cant_produc
+                //restar el valor total segun el numero de unidades sumadas
+                const valor = document.querySelector('#valor_total')
+                const valor_total_unidades = e.target.parentElement.parentElement.querySelector('.price').textContent
+                valor.value = parseFloat(valor.value) - parseFloat(valor_total_unidades)
             })
         });
 
@@ -81,8 +86,8 @@ class Carrito {
                 
                 //modificar el valor total segun el producto eliminado del carrito
                 const valor = document.querySelector('#valor_total')
-                const nuevototal = parseFloat(valor.value) - e.target.parentElement.parentElement.parentElement.querySelector('.price').textContent
-                valor.value = nuevototal
+
+                valor.value = parseFloat(valor.value) - e.target.parentElement.parentElement.parentElement.querySelector('.price').textContent
             })
         })
     }
