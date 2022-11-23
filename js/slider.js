@@ -5,6 +5,7 @@ let slidersectionlast = slidersection[slidersection.length - 1]
 const btn_right = document.querySelector('#btn-right')
 const btn_left = document.querySelector('#btn-left')
 
+
 function next(){
     let slidersectionFirst = document.querySelectorAll('.content_slider')[0]
 
